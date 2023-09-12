@@ -1,2 +1,2 @@
 # ASVK_Python
-ASVK practicum
+Files from the Python prac
