@@ -5,13 +5,12 @@ res = []
 matr1.append(list(eval(input())))
 length = len(matr1[0])
 
-i = 1
-while inp := input():
-	if i >= length:
-		matr2.append(list(eval(inp)))
-	else:
-		matr1.append(list(eval(inp)))
-		i += 1
+for i in range(1, 2 * length):
+    inp = input()
+    if i >= length:
+        matr2.append(list(eval(inp)))
+    else:
+        matr1.append(list(eval(inp)))
 
 for i in range(length):
 	res.append([])
