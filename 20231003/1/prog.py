@@ -1,8 +1,10 @@
 def Pareto(*args):
-    if not isinstance(args[0], tuple):
-        return args[0], args[1]
-
     ans = []
+
+    if not isinstance(args[0], tuple):
+        ans.append((args[0], args[1]))
+        return tuple(ans)
+
     for i in range(len(args)):
         fl = True
         for j in range(len(args)):
