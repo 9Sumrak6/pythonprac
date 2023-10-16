@@ -6,7 +6,8 @@ def scale(a, b, c, d, x):
 
 W, H, a, b, f = input().split()
 
-W, H, a, b = map(int, (W, H, a, b))
+W, H = map(int, (W, H))
+a, b = map(float, (a, b))
 f = 'lambda x:' + f
 
 screen = [[' '] * W for i in range(H)]
