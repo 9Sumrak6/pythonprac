@@ -7,6 +7,6 @@ for i in range(0, len(s) - 1):
         continue
 
     if s[i + 1].isalpha():
-        pairs.add(min(s[i], s[i + 1]) + max(s[i], s[i + 1]))
+        pairs.add(s[i] + s[i + 1])
 
 print(len(pairs))
