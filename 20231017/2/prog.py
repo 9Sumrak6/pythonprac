@@ -3,7 +3,7 @@ from math import *
 funcs = {}
 
 s_num = 0
-while s := input():
+while s := input().strip():
     s_num += 1
 
     if s[0] == ':':
@@ -14,9 +14,9 @@ while s := input():
             beg, end = -1, -1
 
             for i in range(4, len(s)):
-                if beg < 0 and (s[i] == '"' or s[i] == "'") :
+                if beg < 0 and (s[i] == '"' or s[i] == "'"):
                     beg = i + 1
-                elif end < 0 and (s[i] == '"' or s[i] == "'") :
+                elif end < 0 and (s[i] == '"' or s[i] == "'"):
                     end = i
                     break
                 
@@ -39,16 +39,16 @@ while s := input():
                 beg, end = -1, -1
 
                 for i in range(len(f_name), len(s)):
-                    if beg < 0 and (s[i] == '"' or s[i] == "'") :
+                    if beg < 0 and (s[i] == '"' or s[i] == "'"):
                         beg = i + 1
-                    elif end < 0 and (s[i] == '"' or s[i] == "'") :
+                    elif end < 0 and (s[i] == '"' or s[i] == "'"):
                         end = i
                         break
 
                 if beg < 0 or end < 0:
-                    params = {f'{funcs[f_name][1][0]}' : eval(s.split()[1])}
+                    params = {f'{funcs[f_name][1][0]}': eval(s.split()[1])}
                 else:
-                    params = {f'{funcs[f_name][1][0]}' : s[beg:end]}
+                    params = {f'{funcs[f_name][1][0]}': s[beg:end]}
             else:
                 lst = s.split()[1:]
                 for i in range(len(lst)):
@@ -57,3 +57,4 @@ while s := input():
                 params = dict(zip(funcs[f_name][1], lst))
 
             print(eval(funcs[f_name][0], globals() | params))
+            
