@@ -1,0 +1,1 @@
+print("".join(list(slide('V mire luchshe net poka', 3))) + "".join(list(slide('fakulteta VMK', 3))))
