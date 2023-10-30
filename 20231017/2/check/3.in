@@ -1,0 +1,6 @@
+:prin x "I{}".format(x)
+prin  " LOVE ASVK"
+prin  " LOVE MSU"
+prin  " LOVE   PYTHON" 
+prin  " LOVE   ML"
+     quit "{} 0_o {}"

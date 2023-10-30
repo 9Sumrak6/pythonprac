@@ -1,0 +1,5 @@
+:f a b c d a+b/c-c/d*(sin(a))
+f 1 2 3 4
+:f a b c d "I"+"L"+"MSU"
+f 1 2 3 4
+quit "/{}---{}\"
