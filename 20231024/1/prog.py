@@ -1,7 +1,7 @@
 import sys
 
 
-def fib(self, m, n):
+def fib(m, n):
 	a, b = 0, 1
 
 	if m > n:

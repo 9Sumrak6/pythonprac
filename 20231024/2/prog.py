@@ -2,7 +2,7 @@ import itertools
 import sys
 
 
-def slide(self, seq, n):
+def slide(seq, n):
     check, ite, cur = itertools.tee(seq, 3)
     
     for i in itertools.count(0):
