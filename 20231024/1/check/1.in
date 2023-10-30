@@ -1,0 +1,2 @@
+print(1)
+print(*fib(4, 1))

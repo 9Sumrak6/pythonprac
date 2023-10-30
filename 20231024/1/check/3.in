@@ -1,0 +1,3 @@
+print('V mire luchshe net poka')
+print(list(fib(201, 321)))
+print('fakulteta VMK')

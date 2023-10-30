@@ -1,0 +1,3 @@
+print('Python ze best')
+print(*fib(101, 101))
+print('Nepobedim')
