@@ -1,2 +1,1 @@
-import itertools
-print(*itertools.takewhile(lambda x: x <= 17, slide(itertools.count(0), 1)))
+print(list(slide([3, 2, 1, 2, 0, 1, 1, 0, 1], 3)))
