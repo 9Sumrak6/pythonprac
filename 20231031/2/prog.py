@@ -114,10 +114,10 @@ class Triangle():
                         x_int = (b2 - b1) / (k1 - k2)
                         if min(x[1][0], x[2][0]) <= x_int and max(x[1][0], x[2][0]) >= x_int and min(y[1][0], y[2][0]) <= x_int and max(y[1][0], y[2][0]) >= x_int:
                             return True
-                elif type(x[0]) != list:
+                elif type(y[0]) == list:
                     if min(x[1][0], x[2][0]) <= y[1][0] and max(x[1][0], x[2][0]) >= y[1][0] and (max(x[1][1], x[2][1]) <= max(y[1][1], y[2][1]) and max(x[1][1], x[2][1]) >= min(y[1][1], y[2][1]) or min(x[1][1], x[2][1]) >= min(y[1][1], y[2][1]) and min(x[1][1], x[2][1]) <= max(y[1][1], y[2][1])):
                         return True
-                elif type(y[0]) != list:
+                elif type(x[0]) == list:
                     if min(x[1][0], x[2][0]) <= y[1][0] and max(x[1][0], x[2][0]) >= y[1][0] and (max(y[1][1], y[2][1]) <= max(x[1][1], x[2][1]) and max(y[1][1], y[2][1]) >= min(x[1][1], x[2][1]) or min(y[1][1], y[2][1]) >= min(x[1][1], x[2][1]) and min(x[1][1], x[2][1]) <= max(y[1][1], y[2][1])):
                         return True
                 else:
