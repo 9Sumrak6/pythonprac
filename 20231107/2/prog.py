@@ -8,10 +8,8 @@ def triangleSquare(inp):
 	try:
 		(x1, y1), (x2, y2), (x3, y3) = eval(inp)
 	except:
-		print(0)
 		raise InvalidInput
 
-	print(1)
 
 	try:
 		x1, x2, x3 = float(x1), float(x2), float(x3)
@@ -23,7 +21,6 @@ def triangleSquare(inp):
 
 		return ans
 	except:
-		print(1)
 		raise BadTriangle
 
 
