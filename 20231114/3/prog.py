@@ -115,3 +115,6 @@ def alphaq():
     for i in range(10000):
         ans += str(a)
     return ans
+
+import sys
+exec(sys.stdin.read())
