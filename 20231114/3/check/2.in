@@ -1,0 +1,37 @@
+from timeit import timeit
+from string import ascii_lowercase
+
+lets = list(ascii_lowercase)
+
+al = Alpha(a=3, b=5, c=9, z=0, v=1)
+al1 = AlphaQ(a=3, b=5, c=9, z=0, v=1)
+
+alpt = timeit("""
+for i in range(26):
+    try:
+        getattr(al, lets[i])
+    except AttributeError:
+        print('nope', end=' ')
+    try:
+        setattr(al, lets[i], 0)
+    except AttributeError:
+        print('nope1', end=' ')
+""", number=50, globals = globals())
+
+print('\n')
+
+alqt = timeit("""
+for i in range(26):
+    try:
+        getattr(al1, lets[i])
+    except AttributeError:
+        print('nope', end=' ')
+    try:
+        setattr(al1, lets[i], 0)
+    except AttributeError:
+        print('nope1', end=' ')
+""", number=50, globals = globals())
+
+print('\n')
+
+print(alpt < alqt)

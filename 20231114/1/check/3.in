@@ -1,0 +1,25 @@
+@objcount
+class C:
+    def __init__(self, yes=None, **kwargs):
+        print('Yahooooooooo')
+        self.yes = yes
+        self.counter = 100500
+
+    def __str__(self):
+        return f'{self.__class__.counter} aboba'
+
+    def __del__(self):
+        print('dirty-dirty-dirty')
+
+a, b, c, d, e, f = (C() for i in range(6))
+print(a)
+del a
+print(b)
+del b
+print(c)
+del c
+print(d)
+del d
+print(e)
+del f
+print(e)

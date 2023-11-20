@@ -1,0 +1,11 @@
+class C:
+	num = Num()
+	num1 = Num()
+
+c = C()
+print(c.num, c.num1)
+c.num = 252j-1
+c.num1 = 252j+1
+print(c.num, c.num1, c.num + c.num1)
+c.num = '321 Ze Best'
+print(c.num, c.num1, c.num + c.num1)

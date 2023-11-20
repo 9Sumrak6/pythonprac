@@ -1,0 +1,11 @@
+class C:
+	num = Num()
+	num1 = Num()
+
+c = C()
+print(c.num, c.num1)
+c.num = 0x123
+c.num1 = ['m', 'e', 'm', 'c', 'h', 'i', 'k']
+print(c.num, c.num1, c.num + c.num1)
+c.num = '101 Nepobedim'
+print(c.num, c.num1, c.num + c.num1)

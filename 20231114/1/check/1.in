@@ -1,0 +1,19 @@
+@objcount
+class C:
+    def __init__(self, yes=None, **kwargs):
+        self.yes = yes
+        self.counter = 100500
+
+    def __str__(self):
+        return f'{self.__class__.counter} obaba'
+
+    def __str__(self):
+        return f'{self.__class__.counter} aboba'
+
+
+a = [C(i, h=i) for i in range(1000)]
+b = [C(i, h=i) for i in range(10)]
+print(*b)
+print(*a)
+c=C()
+print(c)

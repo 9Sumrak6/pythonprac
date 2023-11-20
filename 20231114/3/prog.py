@@ -62,59 +62,5 @@ class AlphaQ:
 
         return ans
 
-
-from string import ascii_lowercase
-
-def alpha():
-    a = Alpha()
-    for i in range(10000):
-        str(a)
-    for i in range(10000):
-        for j in ascii_lowercase:
-            setattr(a, j, i)
-        str(a)
-    for i in range(10000):
-        str(a)
-
-def alphaq():
-    a = AlphaQ()
-    for i in range(10000):
-        str(a)
-    for i in range(10000):
-        for j in ascii_lowercase:
-            setattr(a, j, i)
-        str(a)
-    for i in range(10000):
-        str(a)
-
-from string import ascii_lowercase
-
-
-def alpha():
-    a = Alpha(a=100000, s=100000, v=100000, k=100000, m=100000, g=100000, u=100000)
-    ans = ''
-    for i in range(10000):
-        ans += str(a)
-    for i in range(10000):
-        for j in ascii_lowercase:
-            setattr(a, j, i)
-        ans += str(a)
-    for i in range(10000):
-        ans += str(a)
-    return ans
-
-def alphaq():
-    a = AlphaQ(a=100000, s=100000, v=100000, k=100000, m=100000, g=100000, u=100000)
-    ans = ''
-    for i in range(10000):
-        ans += str(a)
-    for i in range(10000):
-        for j in ascii_lowercase:
-            setattr(a, j, i)
-        ans += str(a)
-    for i in range(10000):
-        ans += str(a)
-    return ans
-
 import sys
 exec(sys.stdin.read())

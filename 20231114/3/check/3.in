@@ -1,0 +1,27 @@
+from timeit import timeit
+from string import ascii_lowercase
+
+lets = list(ascii_lowercase)
+
+al = Alpha(a=3, b=5, c=9, z=0, v=1)
+al1 = AlphaQ(a=3, b=5, c=9, z=0, v=1)
+
+alpt = timeit("""
+al = Alpha(c=10, z=2, a=42)
+al.e = 123
+a = al.c
+a = al.z
+a = al.a
+a = al.e
+""", number=50000, globals = globals())
+
+alqt = timeit("""
+alq = AlphaQ(c=10, z=2, a=42)
+alq.e = 123
+a = alq.c
+a = alq.z
+a = alq.a
+a = alq.e
+""", number=50000, globals = globals())
+
+print(alpt > alqt)
