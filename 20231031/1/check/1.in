@@ -1,0 +1,9 @@
+a = Omnibus()
+for i in range(321):
+    a.b = i
+print(a.b)
+del a.b
+b = Omnibus()
+b.b = 100
+print(b.b)
+print(a.b)
