@@ -1,0 +1,9 @@
+__init__: ('Slava', 'Malo'), {}
+__str__: (), {}
+Shutka bugaga
+__init__: ('Andrey',), {}
+__str__: (), {}
+Shutka bugaga
+__init__: ('Serega', 'Nemalo'), {}
+__str__: (), {}
+Shutka bugaga
